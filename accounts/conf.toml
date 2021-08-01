@@ -1,0 +1,46 @@
+
+[tg]
+
+token = "1712989338:AAGatatY0SAgzyibgC5_DzjeYKvXX-yJ4Mk" # get from tg::botfather
+
+usr_id = "1296400619" # get from tg::@get_id_bot
+
+[database]
+
+db_connect_method = "mongodb+srv" # like "mongodb", "mongodb+srv",etc...
+
+db_addr = "cluster0.mxi9x.mongodb.net" # mongodb host address
+
+db_port = 27017 # mongodb connect port,default is 27017
+
+db_name = "Cluster0" # set Your mongodb collection_Name,default is "iCopy"
+
+db_user = "ceshi" # mongodb username
+
+db_passwd = "ceshi" # mongodb passwd
+
+[general]
+
+language = "cn" # cn / eng / jp,default is "cn"
+
+cloner = "fclone" # Only fclone is suitable now,Future supports: rclone / gclone / autorclone
+
+option = "copy" # cloner option,e.g. "copy" , "sync"
+
+remote = "gd" # e.g. "fc" , "gc" , "rc", "sa" ,etc...
+
+parallel_c = "16" # customize checkers_NUM,default = "16"
+
+parallel_t = "32" # customize transfers_NUM,default = "32"
+
+min_sleep = "1ms" # customize drive-pacer-min-sleep,default = "1ms"
+
+sa_path = "/root/AutoRclone/accounts" #Service_Accounts path,No slash at the end,default is "/root/accounts"
+
+run_args = ['--log-level=DEBUG', '--log-file=/root/icopy_cloner_debug.log'] # status flags
+
+[web]
+
+dashboard = 0 # web service switch
+
+port = 8000 # web service port, default is 8000.
